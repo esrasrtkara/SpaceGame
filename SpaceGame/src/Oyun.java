@@ -47,7 +47,7 @@ class Ates{
 }
 
 public class Oyun extends JPanel implements KeyListener,ActionListener{
-    Timer timer = new Timer(1,this);
+    Timer timer = new Timer(5,this);
     private  int gecen_süre = 0;
     private  int harcanan_ates = 0;
     
@@ -95,7 +95,7 @@ public class Oyun extends JPanel implements KeyListener,ActionListener{
     @Override
     public void paint(Graphics g) {
         super.paint(g); //To change body of generated methods, choose Tools | Templates.
-        gecen_süre += 1;
+        gecen_süre += 5;
         
         g.setColor(Color.red);
         
